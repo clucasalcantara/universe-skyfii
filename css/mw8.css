@@ -1,0 +1,59 @@
+h4 {
+    margin-bottom: 0;
+}
+
+.mw8-logo {
+    transform: scale(.5);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.mw8-logo-qr {
+    margin-top: 2em;
+    transform: scale(.8);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.welcome-user {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+.promo-information {
+    color: #cdf4f2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.promo-information-final {
+    color: #cdf4f2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.owl-item {
+    width: 200px;
+    overflow: hidden;
+}
+
+.qr-code-render {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.qrcode {
+    margin-top: -4em;
+    transform: scale(.6);
+}
+
+.owl-theme .owl-controls {
+    margin-top: 0 !important;
+}
