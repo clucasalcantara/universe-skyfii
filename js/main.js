@@ -4,8 +4,6 @@ $(document).ready(function() {
 
   if(urlParams.user_name) {
       document.getElementById('user_name').innerText = urlParams.user_name;
-  } else {
-      location.href = "http://www.google.com.br";
   }
 
   if(urlParams.promo_code) {
