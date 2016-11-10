@@ -1,14 +1,29 @@
 $(document).ready(function() {
-  $("#owl-example").owlCarousel();
+  $("#owl-example").owlCarousel({
+      items:1
+  });
   let urlParams = getQueryParams(document.location.search);
+
+  function generateQRCode(id) {
+     let identifier = id + Math.floor((Math.random() * 1000) + 1);
+    let promotions = [
+      identifier + ";342432432;Combo Galaxy S7 + VR ;30%;2017-01-31T18:46:19-0300;1318630",
+      identifier + ";342432432;Galaxy A5 Duos;20%;2017-01-31T18:46:19-0300;1318630",
+      identifier + ";342432432;Galaxy Note Edge;40%;2017-01-31T18:46:19-0300;1318630",
+    ];
+
+    let qrCodeUrl = promotions[id - 1];
+
+    return `https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=${qrCodeUrl}&choe=UTF-8`;
+  }
 
   if(urlParams.user_name) {
       document.getElementById('user_name').innerText = urlParams.user_name;
   }
 
   if(urlParams.promo_code) {
-      let imageFile = "images/qrcodes/qrcode" + urlParams.promo_code + ".png";
-      document.getElementById('qrcode').src = imageFile;
+    let url = generateQRCode(urlParams.promo_code);
+    document.getElementById('qrcode').src = url;
   }
 
   function getQueryParams(qs) {
@@ -22,4 +37,5 @@ $(document).ready(function() {
     }
     return params;
   }
+
 });
