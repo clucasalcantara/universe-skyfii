@@ -7,9 +7,9 @@ $(document).ready(function() {
   function generateQRCode(id) {
      let identifier = id + Math.floor((Math.random() * 1000) + 1);
     let promotions = [
-      identifier + ";342432432;Combo Galaxy S7 + VR ;30%;2017-01-31T18:46:19-0300;1318630",
-      identifier + ";342432432;Galaxy A5 Duos;20%;2017-01-31T18:46:19-0300;1318630",
-      identifier + ";342432432;Galaxy Note Edge;40%;2017-01-31T18:46:19-0300;1318630",
+      identifier + ";342432432;Creme para as mãos gramado;15%%;2017-01-31T18:46:19-0300;1318630",
+      identifier + ";342432432;Esmalte Revlon;25%;2017-01-31T18:46:19-0300;1318630",
+      identifier + ";342432432;BB Cream L'oreal Paris;20%;2017-01-31T18:46:19-0300;1318630",
     ];
 
     let qrCodeUrl = promotions[id - 1];
