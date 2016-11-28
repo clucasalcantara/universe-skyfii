@@ -59,3 +59,8 @@ h4 {
 body {
     background-color: white;
 }
+
+.owl-carousel .owl-item {
+    float: left;
+    text-align: center !important;
+}
